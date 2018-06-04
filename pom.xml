@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -259,13 +256,13 @@
 					<artifactId>bnd-maven-plugin</artifactId>
 					<version>${ode4j.bnd-maven-plugin.version}</version>
 					<configuration>
-						<bnd><![CDATA[
+						<bnd>
 							Bundle-DocURL: ${project.url}
 							Bundle-Name: ${project.name} ${project.version} - ${project.description}
 							Bundle-Description: ${project.description}
 							Bundle-SCM: ${project.scm.url}
-							Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=7.0))"
-]]></bnd>
+							Require-Capability: osgi.ee;filter:="(&amp;(osgi.ee=JavaSE)(version=7.0))"
+</bnd>
 					</configuration>
 				</plugin>
 
